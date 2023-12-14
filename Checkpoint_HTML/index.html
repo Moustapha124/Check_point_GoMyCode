@@ -8,69 +8,69 @@
 
     <header>
         <h1>Mon Site</h1>
+        <nav>
+            <ul>
+                <li><a href="#acc">Accueil</a></li>
+                <li><a href="#propos">À propos</a></li>
+                <li><a href="#travail">Travail</a></li>
+                <li><a href="#cv">CV</a></li>
+                <li><a href="#cont">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#acc">Accueil</a></li>
-            <li><a href="#propos">À propos</a></li>
-            <li><a href="#travail">Travail</a></li>
-            <li><a href="#cv">CV</a></li>
-            <li><a href="#cont">Contact</a></li>
-        </ul>
-    </nav>
+    <main>
+        <section id="acc">
+            <h2>Accueil</h2>
+            <p>Bienvenue sur mon portfolio</p>
+            <iframe width="761" height="428" src="https://www.youtube.com/embed/qsbkZ7gIKnc" title="[Cours HTML] Apprendre HTML de zéro (tuto débutant)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <audio controls>
+                <source src="./sons/VVV.mp3" type="audio/mpeg">
+            </audio>
+        </section>
 
-    <section id="acc">
-        <h2>Accueil</h2>
-        <p>Bienvenue sur mon portfolio</p>
-        <iframe width="761" height="428" src="https://www.youtube.com/embed/qsbkZ7gIKnc" title="[Cours HTML] Apprendre HTML de zéro (tuto débutant)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        <audio controls>
-            <source src="test.mp3" type="audio/mpeg">
-            
-        </audio>
-    </section>
+        <section id="propos">
+            <h2>À propos</h2>
+            <p>Je m'appelle Moustapha etudiant a gomycode</p>
+        </section>
 
-    <section id="propos">
-        <h2>À propos</h2>
-        <p>Je m'appelle Moustapha etudiant a gomycode</p>
-    </section>
+        <section id="travail">
+            <h2>Travail</h2>
+            <table>
+                <caption>Liste de travaux</caption>
+                <thead>
+                    <tr>
+                        <th>Projet</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Checkpoint_html</td>
+                        <td>14 decembre 2023</td>
+                    </tr>
+                    <tr>
+                        <td>Checkpoint_Git&Github</td>
+                        <td>12 decembre 2023</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 
-    <section id="travail">
-        <h2>Travail</h2>
-        <table>
-            <caption>Liste de travaux</caption>
-            <thead>
-                <tr>
-                    <th>Projet</th>
-                    <th>Date</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Checkpoint_html</td>
-                    <td>14 decembre 2023</td>
-                </tr>
-                <tr>
-                    <td>Checkpoint_Git&Github</td>
-                    <td>12 decembre 2023</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
+        <section id="cv">
+            <h2>CV</h2>
+            <form>
+                <label for="cv">Télécharger CV :</label>
+                <input type="file" id="cv" name="cv"><br><br>
+                <input type="submit" value="Envoyer">
+        </section>
 
-    <section id="cv">
-        <h2>CV</h2>
-        <form>
-            <label for="cv">Télécharger CV :</label>
-            <input type="file" id="cv" name="cv"><br><br>
-            <input type="submit" value="Envoyer">
-    </section>
-
-    <section id="cont">
-        <h2>Contact</h2>
-        <p>Mail: Moustaphautop9@gmail.com</p>
-        <p>Numero: +221 78 480 13 04</p>
-    </section>
+        <section id="cont">
+            <h2>Contact</h2>
+            <p>Mail: Moustaphautop9@gmail.com</p>
+            <p>Numero: +221 78 480 13 04</p>
+        </section>
+    </main>
 
     <footer>
         <p>&copy;GoMyCode - Hackerspace Point-E, tous droits réservés </p>
