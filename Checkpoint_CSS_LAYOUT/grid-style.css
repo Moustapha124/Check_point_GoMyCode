@@ -1,0 +1,157 @@
+/* Reset des styles par défaut */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Styles généraux */
+
+
+/* Header styles */
+header {
+  position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    padding: 5px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  font-family: Roboto, Arial, sans-serif;
+  padding-top: 105px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.navbar a img {
+  max-width: 100%;
+  height: auto;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.navi {
+  list-style: none;
+  display: flex;
+}
+nav ul li a.active
+{
+    color: #00b39b;
+}
+
+ul.navi li a
+{
+  margin-left: 20px;
+  color: #747474 ;
+  text-decoration: none;
+}
+
+
+.navi li {
+  margin-right: 20px;
+}
+
+.navi li:last-child {
+  margin-right: 0;
+}
+
+.active {
+  color: #4ba6e9;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content li {
+  padding: 10px;
+}
+
+/* Main section styles */
+.sec1 {
+  
+  padding: 50px 0;
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.col-2 p {
+  margin-bottom: 20px;
+}
+
+/* Section 2 styles */
+.sec2 {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.cartes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  border-radius: 5px 5px 5px;
+  gap: 20px; /* Espacement entre les cartes */
+  
+}
+
+.carte {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: 300px;
+  
+}
+
+
+
+#card1{
+  background-color: #00b39b;
+  color: #fff;
+}
+
+#card2{
+  background-color: #3d83df;
+  color: #fff;
+}
+#card3{
+  background-color: #1b2734;
+  color: #fff;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .grid-container {
+      grid-template-columns: 1fr;
+  }
+
+  .carte {
+      flex: 1 1 100%;
+  }
+}
